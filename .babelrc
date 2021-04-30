@@ -1,0 +1,22 @@
+{
+  "env": {
+    "development": {
+      "presets": ["next/babel"],
+      "plugins": [
+        ["import", {"libraryName": "antd"}]
+      ]
+    },
+    "production": {
+      "presets": ["next/babel"],
+      "plugins": [
+        ["import", {"libraryName": "antd"}]
+      ]
+    },
+    "test": {
+      "presets": [["next/babel", { "preset-env": { "modules": "commonjs" } }]],
+      "plugins": [
+        ["import", {"libraryName": "antd"}]
+      ]
+    }
+  }
+}
